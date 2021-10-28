@@ -6,19 +6,97 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>my github page</title>
     <style>
+        *,*::after, *::before {
+            box-sizing: border-box;
+        }
         body {
-            font-family: sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #333940;
+            color: #fffff9;
         }
         section {
-            width: 500px;
+            max-width: 600px;
             margin: auto;
+            padding: 18px;
         }
+
+        h1, p {
+            text-align: center;
+            font-size: 1.5rem;
+        }
+
+        h2 {
+            font-size: 1.2rem;
+            font-weight: 500;
+        }
+
+        p {
+            font-size: 1.1rem;
+            margin: 30px 0px 30px 0px;
+        }
+
+        h1 span {
+            font-size: 3rem;
+        }
+
+        .me {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 50%;
+            box-shadow: 2px 2px 3px 2px rgb(0 0 0 / 16%), 0px 0px 7px 3px rgb(0 0 0 / 14%);
+            margin: auto;
+            display: block;
+        }
+
+        .btn-link {
+            padding: 12px 18px;
+            display: block;
+            background: linear-gradient(45deg, #878787, #999999, #aaa);
+            border-radius: 18px;
+            margin: 18px 0px;
+            text-align: center;
+            font-size: 1.2rem;
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .btn-instagram {
+            background: linear-gradient(45deg, #833ab4, #c13584, #e1306c, #fd1d1d);
+        }
+
+        .btn-twitter {
+            background:linear-gradient(45deg, #00ACEE 20%, #36D8FF 70%, #86E8FF);
+        }
+
+        .btn-linkedin {
+            background: linear-gradient(45deg, #0077B5, #00A0DC, #44B0CC);
+        }
+
+
     </style>
 </head>
 <body>
     <section>
-        <h1>Olá m... visitante!</h1>
-        <p>Ainda não comecei a construir este cantinho, sinto muito <strong>:(</strong></p>
+        <picture >
+            <source srcset="./images/me.webp" type="image/webp">
+            <img class="me" src="./images/me.webp" alt="I'ts me! Kassio Buck">
+        </picture>
+
+        <h1><span>Olá!</span><br>Meu nome é Kassio Buck e está é minha página no GitHub Pages, seja bem vind@!</h1>
+
+        <p>Como pode ver falta muita coisa por aqui, estou trabalhando nisso.</p>
+
+        <p>Enquanto está página não fica pronta <i>(isso pode demorar um pouco)</i>, pode entrar em contato comigo pelos meios baixo:</p>
+
+        <h2>Profissional:</h2>
+        <a class="btn-link btn-linkedin" href="https://www.linkedin.com/in/kassio-buck-99474338/">LinkedIn</a>
+        <a class="btn-link" href="mailto:kassiobuck@gmail.com">kassiobuck@gmail.com</a>
+        <h2>Pessoal:</h2>
+        <a class="btn-link btn-instagram" href="https://www.instagram.com/kassiobuck/">Instagram</a>
+        <a class="btn-link btn-twitter" href="https://twitter.com/kassiobuck">Twitter</a>
+
     </section>
 </body>
 </html>
